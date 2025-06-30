@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={serviceDropdown}
-                className="flex items-center hover:text-primary font-medium transition-colors duration-300"
+                className="flex items-center cursor-pointer hover:text-main font-medium transition-colors duration-300"
               >
                 Services
                 <svg
@@ -52,25 +52,25 @@ const Navbar = () => {
                   <div className="py-1">
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:bg-[#6ec1e4] hover:text-white transition-colors duration-200"
+                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:text-main transition-colors duration-200"
                     >
                       Find a Doctor
                     </a>
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:bg-[#6ec1e4] hover:text-white transition-colors duration-200"
+                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:text-main transition-colors duration-200"
                     >
                       Book Appointment
                     </a>
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:bg-[#6ec1e4] hover:text-white transition-colors duration-200"
+                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:text-main transition-colors duration-200"
                     >
                       Emergency Care
                     </a>
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:bg-[#6ec1e4] hover:text-white transition-colors duration-200"
+                      className="block px-4 py-2 text-sm text-[#2f4f4f] hover:text-main transition-colors duration-200"
                     >
                       Health Records
                     </a>
@@ -78,15 +78,15 @@ const Navbar = () => {
                 </div>
               )}
             </div>
-            <Link href="#" className="cursor-pointer hover:text-primary">
+            <Link href="#" className="cursor-pointer hover:text-main">
               Articles
             </Link>
 
-            <Link href="#" className="cursor-pointer hover:text-primary">
+            <Link href="#" className="cursor-pointer hover:text-main">
               About Us
             </Link>
 
-            <Link href="#" className="cursor-pointer hover:text-primary">
+            <Link href="#" className="cursor-pointer hover:text-main">
               Contact Us
             </Link>
           </div>
