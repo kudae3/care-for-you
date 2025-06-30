@@ -18,13 +18,13 @@ body {
 }
 
 @layer utilities {
-  .primary-btn {
+  .btn-primary {
     @apply bg-[#4CAF50] text-white hover:bg-[#43A047] duration-300;
   }
-  .secondary-btn {
+  .btn-secondary {
     @apply bg-[#2196F3] text-white hover:bg-[#1976D2] duration-300;
   }
-  .danger-btn {
+  .btn-danger {
     @apply bg-[#F44336] text-white hover:bg-[#D32F2F] duration-300;
   }
 }
