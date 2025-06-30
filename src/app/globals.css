@@ -1,16 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #6ec1e4;
-  --color-secondary: #a3d9a5;
-  --color-accent: #ffe699;
+  --color-main: #007e6a;
+  --color-primary: #2e2e2e;
+  --color-secondary: #005a8d;
+  --color-accent: #f29d38;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #f4f6f7;
+  --foreground: #2f4f4f;
 }
 
 body {
@@ -20,13 +19,16 @@ body {
 }
 
 @layer utilities {
-  .primary-btn {
+  .btn-primary {
     @apply bg-[#4CAF50] text-white hover:bg-[#43A047] duration-300;
   }
-  .secondary-btn {
+  .btn-secondary {
     @apply bg-[#2196F3] text-white hover:bg-[#1976D2] duration-300;
   }
-  .danger-btn {
+  .btn-danger {
     @apply bg-[#F44336] text-white hover:bg-[#D32F2F] duration-300;
+  }
+  .container {
+    @apply min-h-screen max-w-7xl mx-auto p-5;
   }
 }
