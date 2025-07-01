@@ -5,6 +5,7 @@
   --color-primary: #2e2e2e;
   --color-secondary: #005a8d;
   --color-accent: #f29d38;
+  --color-danger: #f44336;
 }
 
 :root {
@@ -36,5 +37,11 @@ body {
   }
   .heading-subtitle {
     @apply text-sm md:text-[16px] leading-7;
+  }
+  .form-label {
+    @apply block text-xs md:text-sm text-[var(--color-primary)] mb-1 font-medium;
+  }
+  .form-input {
+    @apply w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-0 text-xs md:text-sm;
   }
 }

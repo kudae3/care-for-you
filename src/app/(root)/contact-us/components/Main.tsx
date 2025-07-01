@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "./parts/Accordion";
+import ContactForm from "./parts/ContactForm";
 
 const Main = () => {
   return (
@@ -11,13 +12,15 @@ const Main = () => {
           we're ready to answer any and all questions
         </p>
       </div>
-      <div className="md:flex justify-center items-center gap-8">
+      <div className="md:flex justify-center gap-8 mb-5 md:mb-10">
         {/* Accordion */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <Accordion />
         </div>
         {/* Contact Form */}
-        <div className="w-full md:w-1/2">{/* Form will go here */}</div>
+        <div className="w-full md:w-1/2">
+          <ContactForm />
+        </div>
       </div>
     </div>
   );
