@@ -31,4 +31,10 @@ body {
   .container {
     @apply min-h-screen max-w-7xl mx-auto p-5;
   }
+  .heading-title {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+  .heading-text {
+    @apply text-sm md:text-[16px] leading-7;
+  }
 }
