@@ -34,7 +34,7 @@ body {
   .heading-title {
     @apply text-2xl md:text-3xl font-bold;
   }
-  .heading-text {
+  .heading-subtitle {
     @apply text-sm md:text-[16px] leading-7;
   }
 }
