@@ -1,4 +1,5 @@
 "use client";
+import { routes } from "@/routes";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -14,11 +15,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <div className="flex items-center">
-              <span className="ml-2 text-xl">Logo</span>
+          <Link href={routes.Home}>
+            <div className="flex-shrink-0">
+              <div className="flex items-center">
+                <span className="ml-2 text-xl">Logo</span>
+              </div>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation Items */}
           <div className="flex items-center space-x-6 text-sm">
@@ -86,7 +89,10 @@ const Navbar = () => {
               About Us
             </Link>
 
-            <Link href="#" className="cursor-pointer hover:text-main">
+            <Link
+              href={routes.ContactUs}
+              className="cursor-pointer hover:text-main"
+            >
               Contact Us
             </Link>
           </div>
